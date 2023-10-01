@@ -1,13 +1,60 @@
-body {
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  max-width: 1519px;
+  margin: 0 auto;
 }
+
+.pokes {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  
+}
+
+.pokeName {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  padding-bottom: 0px;
+  padding-top: 20px;
+}
+
+
+
+.pokeType {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  margin-bottom: 20px;
+  text-align: center;
+  align-items: center;
+  justify-items: center;
+  width: 30px;
+  height: 30px;
+  
+}
+
+.pokeTypesFirst{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  
+}
+
+.new{
+  text-align: center;
+  pointer-events: none
+}
+
+
+
+
