@@ -56,7 +56,7 @@ export function PokemonTile(props) {
           <div className={"logoBackground"} >
             {pokemonImage && <img src={pokemonImage} alt={pokemonName} className={"logo"} style={{paddingBottom:'40px'}}/>}
             </div>
-            <div className={"pokeName"} >{pokemonName?.charAt(0).toUpperCase() + pokemonName?.slice(1)}</div>
+            
             <div className={"pokeTypesFirst"} > 
             {pokemonNature?.map((nature, index) => {
             return (
@@ -88,6 +88,7 @@ export function PokemonTile(props) {
   }
 
 /*
+<div className={"pokeName"} >{pokemonName?.charAt(0).toUpperCase() + pokemonName?.slice(1)}</div>
             {(nature.type.name==='ground') && <span className = {"pokeType"} style={{backgroundColor:'chocolate', border: '2px solid white', borderRadius: '10px', margin: '3px'}}> {nature.type.name.charAt(0).toUpperCase() + nature.type.name.slice(1)}</span>}
             {(nature.type.name==='flying') && <span className = {"pokeType"} style={{backgroundColor:'lightgrey', border: '2px solid white', borderRadius: '10px', margin: '3px'}}> {nature.type.name.charAt(0).toUpperCase() + nature.type.name.slice(1)}</span>}
             {(nature.type.name==='bug') && <span className = {"pokeType"} style={{backgroundColor:'greenyellow', border: '2px solid white', borderRadius: '10px', margin: '3px'}}> {nature.type.name.charAt(0).toUpperCase() + nature.type.name.slice(1)}</span>}
