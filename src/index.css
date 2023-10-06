@@ -55,8 +55,30 @@
   pointer-events: none
 }
 
+.details{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  
+  }
 
 
 
+.typeDetails{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
 
+h2 {
+  text-align: center;
+}
 
+.eachType{
+  height: 50%;
+  width: 50%;
+}
+
+.types{
+  text-align: center;
+}
